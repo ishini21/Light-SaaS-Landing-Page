@@ -35,7 +35,7 @@ export const ProductShowcase = () => {
          style={{
           translateY,
          }}/>
-        <motion.img  src={tubeImage.src} alt="tube image" height={248} width={248} className="hidden md:block absolute bottom-24 -left-36" 
+        <motion.img  src={tubeImage.src} alt="tube image" height={248} width={248} className="hidden md:block absolute bottom-24 -left-25" 
          style={{
           translateY,
          }}/>
