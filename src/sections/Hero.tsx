@@ -1,10 +1,11 @@
 "use client";
 
-import Image from "next/image";
-import ArrowRight from "@/assets/arrow-right.svg";
+//import Image from "next/image";
+//import ArrowRight from "@/assets/arrow-right.svg";
 import CogImage from "@/assets/cog.png";
 import cylinder from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
+import { ArrowRight } from 'lucide-react';
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -40,8 +41,7 @@ export const Hero = () => {
               <button className="btn btn-primary">Get for free</button>
               <button className="btn btn-text gap-1">
                 <span>Learn more</span>
-                <Image src={ArrowRight} className="h-5 w-5" alt="right-arrow" />
-                {/* <ArrowRight/> */}
+                <ArrowRight className="h-5 w-5 text-white" /> 
               </button>
             </div>
           </div>

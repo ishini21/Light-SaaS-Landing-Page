@@ -1,8 +1,8 @@
 "use client";
-import checkIcon from "@/assets/check.svg";
-import Image from "next/image";
+
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
+import { Check} from 'lucide-react';
 
 
 const pricingTiers = [
@@ -119,11 +119,7 @@ export const Pricing = () => {
                       className="text-sm flex items-center gap-4"
                       key={`feature-${index}-${featureIndex}`}
                     >
-                      <Image
-                        src={checkIcon}
-                        alt="CheckIcon"
-                        className="h-6 w-6"
-                      />
+                      <Check className="h-6 w-6"/>
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -137,46 +133,3 @@ export const Pricing = () => {
   );
 };
 
-// export const Pricing = () => {
-//   return (
-//     <section className="py-24">
-//       <div className="container">
-//         <h2 className="section-title">Pricing</h2>
-//         <p className="section-description mt-5">
-//           Free forever. Upgrade for unlimited tasks, better security, and
-//           exclusive features.
-//         </p>
-
-//         <div className="">
-//           {pricingTiers.map(
-//             ({
-//               title,
-//               monthlyPrice,
-//               buttonText,
-//               popular,
-//               inverse,
-//               features,
-//             }) => (
-//               <div className="">
-//                 <h3>{title}</h3>
-//                 <div className="">
-//                   <span>${monthlyPrice}</span>
-//                   <span>/month</span>
-//                 </div>
-//                 <button>{buttonText}</button>
-//                 <ul>
-//                   {features.map((feature)=>(
-//                     <li>
-//                       <Image src={checkIcon}  alt='CheckIcon' className='h-6 w-6'/>
-//                       {/* <checkIcon/> */}
-//                       <span>{feature}</span></li>
-//                   ))}
-//                 </ul>
-//               </div>
-//             )
-//           )}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
