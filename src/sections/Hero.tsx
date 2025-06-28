@@ -5,7 +5,7 @@
 import CogImage from "@/assets/cog.png";
 import cylinder from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -20,7 +20,7 @@ export const Hero = () => {
   // useMotionValueEvent(scrollYProgress, "change", (latestValue) =>
   // console.log(latestValue)
   // );
-  console.log(CogImage);
+  // console.log(CogImage);
   return (
     <section
       ref={heroRef}
@@ -30,6 +30,7 @@ export const Hero = () => {
         <div className="md:flex items-center">
           <div className="md:w-[678px]">
             <div className="tag">Version 2.0 is here</div>
+
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
               Pathway to productivity
             </h1>
@@ -38,10 +39,12 @@ export const Hero = () => {
               your progress, motivate your efforts, and celebrate your success
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
-              <button className="btn btn-primary">Get for free</button>
+              <button className="btn btn-primary">
+                Get for free
+              </button>
               <button className="btn btn-text gap-1">
                 <span>Learn more</span>
-                <ArrowRight className="h-5 w-5 text-white" /> 
+                <ArrowRight className="h-5 w-5 text-black" />
               </button>
             </div>
           </div>

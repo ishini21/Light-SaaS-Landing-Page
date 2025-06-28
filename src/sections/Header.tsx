@@ -1,7 +1,8 @@
 import Image from "next/image";
-import ArrowRight from "@/assets/right-arrow.jpg";
+import { ArrowRight } from "lucide-react";
 import Logo from "@/assets/logosaas.png";
 import MenuIcon from "@/assets/menu.svg";
+// import ThemeSwitch from "@/components/ThemeSwitch";
 
 export const Header = () => {
   return (
@@ -12,11 +13,7 @@ export const Header = () => {
         </p>
         <div className="inline-flex gap-1 items-center">
           <p>Get started for free</p>
-          <Image
-            src={ArrowRight}
-            className="h-6 w-6 inline-flex justify-center items-center"
-            alt="right-arrow"
-          />
+          <ArrowRight className="h-5 w-5 inline-flex justify-center items-center " />
         </div>
       </div>
       <div className="p-5">
@@ -34,6 +31,7 @@ export const Header = () => {
               <a href="">Customers</a>
               <a href="">Updates</a>
               <a href="">Help</a>
+              {/* <ThemeSwitch/> */}
               <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
                 Get For Free
               </button>
