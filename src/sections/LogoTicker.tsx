@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 export const LogoTicker = () => {
   return (
     <>
-      <div className="py-8 bg-white md:py-12">
+      <div className="py-8 bg-white dark:bg-gray-500 md:py-12">
         <div className="container">
           <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black)]">
             <motion.div
@@ -30,56 +30,56 @@ export const LogoTicker = () => {
               <Image
                 src={acmeLogo}
                 alt="acmeLogo"
-                className="logo-ticker-image"
+                className="h-8 w-auto text-lighttext dark:text-darktext"
               />
               <Image
                 src={quantumLogo}
                 alt="quantumLogo"
-                className="logo-ticker-image"
+                className="h-8 w-auto"
               />
               <Image src={echoLogo} alt="echoLogo" />
               <Image
                 src={celestialLogo}
                 alt="celestialLogo"
-                className="logo-ticker-image"
+                className="h-8 w-auto"
               />
               <Image
                 src={pulseLogo}
                 alt="pulseLogo"
-                className="logo-ticker-image"
+                className="h-8 w-auto"
               />
               <Image
                 src={apexLogo}
                 alt="apexLogo"
-                className="logo-ticker-image"
+                className="h-8 w-auto"
               />
 
               {/* second set of logos  */}
                <Image
                 src={acmeLogo}
                 alt="acmeLogo"
-                className="logo-ticker-image"
+                className="h-8 w-auto"
               />
               <Image
                 src={quantumLogo}
                 alt="quantumLogo"
-                className="logo-ticker-image"
+                className="h-8 w-auto"
               />
               <Image src={echoLogo} alt="echoLogo" />
               <Image
                 src={celestialLogo}
                 alt="celestialLogo"
-                className="logo-ticker-image"
+                className="h-8 w-auto"
               />
               <Image
                 src={pulseLogo}
                 alt="pulseLogo"
-                className="logo-ticker-image"
+                className="h-8 w-auto"
               />
               <Image
                 src={apexLogo}
                 alt="apexLogo"
-                className="logo-ticker-image"
+                className="h-8 w-auto"
               />
             </motion.div>
           </div>

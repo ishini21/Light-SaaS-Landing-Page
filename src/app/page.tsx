@@ -9,7 +9,7 @@ import { Testimonials } from "@/sections/Testimonials";
 
 export default function Home() {
   return (
-  <>
+  <div className="dark:bg-black dark:text-white">
  <Header/>
  <Hero/>
  <LogoTicker/>
@@ -18,6 +18,6 @@ export default function Home() {
  <Testimonials/>
  <CallToAction/>
  <Footer/>
-  </>
+  </div>
   );
 }

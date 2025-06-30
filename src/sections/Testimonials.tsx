@@ -9,7 +9,8 @@ import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
 import Image from "next/image";
-import { twMerge } from "tailwind-merge";
+
+//import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -97,7 +98,7 @@ const TestimonialsColum = (props: {
           {props.testimonials.map(
             ({ text, imageSrc, name, username }, index) => (
               //  <div key={id} className="card">
-              <div className="card" key={`testimonial-${index}`}>
+              <div className="p-10 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full" key={`testimonial-${index}`}>
                 <div>{text}</div>
                 <div className="flex items-center gap-2 mt-5">
                   <Image
@@ -125,14 +126,14 @@ const TestimonialsColum = (props: {
 
 export const Testimonials = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-lightbg dark:bg-darkbg">
       <div className="container">
-        <div className="section-heading">
+        <div className="max-w-[540px] mx-auto">
           <div className="flex justify-center">
-            <div className="tag">Version 2.0 is here</div>
+            <div className="text-sm inline-flex border border-darkbg dark:border-lightbg px-3 py-1 rounded-lg tracking-tight dark:text-darktext">Version 2.0 is here</div>
           </div>
-          <h2 className="section-title mt-5">What our users say</h2>
-          <p className="section-description mt-5">
+          <h2 className="text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text custom-bg mt-5">What our users say</h2>
+          <p className="text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E] light-blue-text mt-5">
             From intuitive design to powerful features, our app has become an
             essential tool for users around the world.
           </p>

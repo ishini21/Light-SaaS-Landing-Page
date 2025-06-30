@@ -1,8 +1,64 @@
 @import "tailwindcss";
 
-@layer components{
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark .dark\:bg-gray-900 {
+  background-color: rgb(17 24 39) !important;
+}
+
+html.dark .dark\:bg-white {
+  background-color: rgb(236, 240, 241) !important;
+}
+
+html.dark .dark\:text-white {
+  color: rgb(255, 255, 255) !important;
+}
+
+html.dark .light-blue-text {
+  color: rgb(179, 229, 252 ) !important;
+}
+
+html.dark .dark\:text-black {
+  color: rgb(28, 40, 51) !important;
+}
+
+html.dark .dark\:text-gray-100 {
+  color: rgb(243 244 246) !important;
+}
+
+html.dark .dark\:bg-gray-700 {
+  background-color: rgb(55 65 81) !important;
+}
+
+html.dark .dark\:bg-gray-500 {
+  background-color: rgb(106, 114, 130) !important;
+}
+
+html.dark .custom-dark-radial-bg {
+  background-image: radial-gradient(
+    ellipse 200% 100% at bottom left,
+    #0D1A4A,
+    #0B1120 50%
+  ) !important
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+html.dark .custom-bg {
+  background-image: radial-gradient(
+    ellipse 200% 100% at bottom left,
+    #B3CFFF,
+    #7986cb 100%
+  ) !important
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+/* @layer components{
   .btn {
-    @apply bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
+    @apply bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight dark:bg-white dark:text-black;
   }
 
   .btn-primary{
@@ -33,4 +89,4 @@
   .card{
     @apply p-10 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
   }
-}
+} */
